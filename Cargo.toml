@@ -1,7 +1,7 @@
 [package]
 name = "text-reader"
 version = "0.1.0"
-description = "Text reader for non-UTF8."
+description = "Text reader."
 documentation = "https://github.com/fewensa/text-reader"
 homepage = "https://github.com/fewensa/text-reader"
 repository = "https://github.com/fewensa/text-reader"
@@ -11,7 +11,11 @@ edition = "2018"
 include = [
   "Cargo.toml",
   "**/*.rs",
+  "README.md",
+  "LICENSE"
 ]
+readme = "README.md"
+categories = ["toolkit"]
 keywords = ["text", "text-reader"]
 
 
