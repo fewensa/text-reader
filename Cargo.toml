@@ -1,0 +1,18 @@
+[package]
+name = "text-reader"
+version = "0.1.0"
+description = "Text reader for non-UTF8."
+documentation = "https://github.com/fewensa/text-reader"
+homepage = "https://github.com/fewensa/text-reader"
+repository = "https://github.com/fewensa/text-reader"
+license = "MIT"
+authors = ["fewensa <fewensa@protonmail.com>"]
+edition = "2018"
+include = [
+  "Cargo.toml",
+  "**/*.rs",
+]
+keywords = ["text", "text-reader"]
+
+
+[dependencies]
