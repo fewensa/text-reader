@@ -1,5 +1,10 @@
+---
 kind: pipeline
 name: default
+
+---
+kind: pipeline
+name: publish
 
 steps:
   - name: publish
@@ -17,8 +22,21 @@ volumes:
       path: /data/mount/cargo
 
 trigger:
-#  branch:
-#    - master
   event:
     - tag
 
+
+---
+kind: pipeline
+name: build
+
+steps:
+  - name: build
+    image: rust:1.33-slim
+    commands:
+      - cargo test
+      - cargo package
+
+trigger:
+  branch:
+    - master
