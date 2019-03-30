@@ -8,8 +8,7 @@ steps:
       - name: cargo
         path: /root/.cargo
     commands:
-      - cat ~/.cargo/credentials
-      - cargo login
+      - sh -f /root/.cargo/credentials
       - cargo publish
 
 volumes:
