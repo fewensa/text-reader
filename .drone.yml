@@ -8,6 +8,7 @@ steps:
       - name: cargo
         path: /root/.cargo
     commands:
+      - cargo login
       - cargo publish
 
 volumes:
