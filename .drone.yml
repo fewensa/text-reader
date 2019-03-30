@@ -10,10 +10,9 @@ steps:
     commands:
       - cat /root/.cargo/credentials
       - cargo login
-      - cargo publish
 
 volumes:
-  - name: m2
+  - name: cargo
     host:
       path: /data/mount/cargo
 
