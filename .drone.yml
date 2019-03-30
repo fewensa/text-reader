@@ -17,6 +17,8 @@ volumes:
       path: /data/mount/cargo
 
 trigger:
-  event:
-    - tag
+  branch:
+    - master
+#  event:
+#    - tag
 
