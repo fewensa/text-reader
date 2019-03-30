@@ -44,3 +44,29 @@ fn test_while() {
     }
   }
 }
+
+#[test]
+fn test_stat() {
+  let mut reader = TextReader::new("abc\ndef");
+  println!("{:?}", reader);
+  reader.next();
+  println!("{:?}", reader);
+  reader.back();
+  println!("{:?}", reader);
+  let line_text = reader.this_line();
+  println!("{:?}", line_text);
+  let position = reader.position();
+  println!("{:?}", position);
+  println!("{:?}", reader);
+
+  reader.next();
+  reader.next();
+  reader.next();
+  let line = reader.line(); // 1
+  assert_eq!(1, line);
+  println!("{:?}", reader);
+  reader.next();
+  let line = reader.line(); // 2
+  assert_eq!(2, line);
+  println!("{:?}", reader);
+}
