@@ -1,0 +1,21 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: publish
+    image: rust:1.33-slim
+    volumes:
+      - name: cargo
+        path: /root/.cargo
+    commands:
+      - cargo publish
+
+volumes:
+  - name: m2
+    host:
+      path: /data/mount/cargo
+
+trigger:
+  event:
+    - tag
+
