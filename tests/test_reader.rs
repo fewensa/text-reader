@@ -29,8 +29,9 @@ fn test_reader() {
 fn test_while() {
   let mut reader = TextReader::new("華文\ndef");
   while reader.has_next() {
+    let position = reader.position();
     match reader.next() {
-      Some(ch) => match reader.position() {
+      Some(ch) => match position {
         0 => assert_eq!('華', ch),
         1 => assert_eq!('文', ch),
         2 => assert_eq!('\n', ch),
