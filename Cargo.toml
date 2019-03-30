@@ -15,7 +15,7 @@ include = [
   "LICENSE"
 ]
 readme = "README.md"
-categories = ["toolkit"]
+categories = ["parsing"]
 keywords = ["text", "text-reader"]
 
 
