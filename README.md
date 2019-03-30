@@ -73,7 +73,7 @@ fn test_stat() {
 }
 ```
 
-When create a TextReader `TextReader::new("華文\ndef")`, TextReader status is:
+When create a TextReader `TextReader::new("abc\ndef")`, TextReader status is:
 
 `TextReader { len: 7, text: ['a', 'b', 'c', '\n', 'd', 'e', 'f'], position: 0, line: 1, cursor: 0 }`
 
