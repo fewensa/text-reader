@@ -57,6 +57,7 @@ steps:
       - name: cargo
         path: /root/.cargo
     commands:
+      - cargo test
       - sh -f /root/.cargo/credentials
       - cargo publish
 
