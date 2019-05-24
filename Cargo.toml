@@ -1,6 +1,6 @@
 [package]
 name = "text-reader"
-version = "0.1.1"
+version = "0.2.0"
 description = "Text reader."
 homepage = "https://github.com/fewensa/text-reader"
 repository = "https://github.com/fewensa/text-reader"
